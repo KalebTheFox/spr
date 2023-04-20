@@ -41,11 +41,9 @@ class Game:
 
             self.spaceship.update()
             if len(self.spaceship.bullets) > 0:
-                for bullets in self.spaceship.bullets:
-                    if bullet.is_fired == True
+                for bullet in self.spaceship.bullets:
+                    if bullet.is_fired == True:
                         bullet.update()
-
-
 
             pygame.display.update()
 
@@ -90,6 +88,7 @@ class Bullet:
 
     def update(self):
         self.game.screen.blit(self.bullet_img, (self.x, self.y))
+
 
 if __name__ == "__main__":
     game = Game(800, 600)
